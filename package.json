@@ -1,0 +1,29 @@
+{
+  "name": "react-express-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel": "^5.8.23",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-react-views": "^0.9.0",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twa-camp-2016/react-express-ci.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twa-camp-2016/react-express-ci/issues"
+  },
+  "homepage": "https://github.com/twa-camp-2016/react-express-ci#readme"
+}
