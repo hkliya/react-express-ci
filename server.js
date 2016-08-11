@@ -1,17 +1,18 @@
-var express = require('express');
+function makeServer() {
+    var express = require('express');
     var app = express();
 
-    app.set('port', (process.argv[2] || 3000));
-    app.set('view engine', 'jsx');
-    app.set('views', __dirname + '/views');
-    app.engine('jsx', require('express-react-views').createEngine({ transformViews: false }));
-
-    require('babel/register')({
-        ignore: false
+    app.get('/', function (req, res) {
+        res.status(200).send('ok');
     });
 
-    app.use('/', function(req, res) {
-      res.render('index', '');
+    var server = app.listen(3000, function () {
+        var port = server.address().port;
+        console.log('Example app listening at port %s', port);
     });
 
-    app.listen(app.get('port'), function() {});
+    return server;
+}
+
+module.exports = makeServer;
+
