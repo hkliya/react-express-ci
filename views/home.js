@@ -1,5 +1,8 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 const Home = React.createClass({
-    render: function() {
+    render: () => {
         return <div>Home</div>;
     }
 });
