@@ -2,3 +2,5 @@ language: node_js
 node_js:
   - "6"
 script: npm run coverage
+notifications:
+  webhooks: https://hook.bearychat.com/=bw70L/travis/d2bd788dbc0d8df49b9206fee6b052ec
