@@ -17,6 +17,12 @@ describe('loading express', function () {
             .expect(200, done);
     });
 
+    it('responds to /api', function testSlash(done) {
+        request(server)
+            .get('/api/login')
+            .expect(200, done);
+    });
+
     it('404 everything else', function testPath(done) {
         request(server)
             .get('/foo/bar')
